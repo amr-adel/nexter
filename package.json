@@ -1,5 +1,5 @@
 {
-  "name": "Nexter",
+  "name": "nexter",
   "version": "1.0.0",
   "description": "Nexter webpage",
   "main": "index.js",
@@ -11,6 +11,9 @@
   "author": "Amr A. Abdelmoez",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.5.3"
+    "node-sass": "4.9.0"
+  },
+  "dependencies": {
+    "hoek": "^5.0.3"
   }
 }
