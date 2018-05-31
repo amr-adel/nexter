@@ -1,0 +1,91 @@
+@media screen and (max-width: $mobile) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        grid-template-rows: 5rem calc(100vh - 5rem) repeat(6, min-content);
+    }
+
+    .nav-btn {
+        width: 2.5rem;
+        right: 2rem;
+        top: 2.5rem;
+
+        &::after,
+        &::before {
+            width: 2.5rem;
+        }
+
+        &::after {
+            transform: translateY(.8rem);
+        }
+        
+        &::before {
+            transform: translateY(-1rem);
+        }
+    }
+
+    .header {
+
+        padding: 10rem 2rem 4rem;
+        
+        &__seenon-logos {
+            flex-direction: column;
+            align-items: center;
+
+            img:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .realtors {
+        grid-column: 1 / -1;
+        padding: 3rem 1rem;
+
+
+        &__list {
+            grid-template-columns: max-content max-content;
+            grid-column-gap: 3rem;
+        }
+    }
+
+    .feature__icon {
+        align-self: center;
+    }
+
+    .features,
+    .homes {
+        padding: 6rem 0;
+    }
+
+    .story {
+
+        
+        &__pictures {
+            grid-column: 1 / -1;
+
+        }
+
+        &__img--1 {
+            width: 100%;
+            grid-column: 2 / 6;
+            grid-row: 1 / 4;
+            box-shadow: 0 2rem 5rem rgba(#000, .1);
+        }
+        
+        &__img--2 {
+            width: 100%;
+            grid-column: 2 / 6;
+            grid-row: 4 / 7;
+            z-index: 10;
+            box-shadow: 0 2rem 5rem rgba(#000, .2);
+        }
+
+        &__content {
+            grid-column: 1 / -1;
+            grid-row: 5 / span 1
+        }
+    }
+}

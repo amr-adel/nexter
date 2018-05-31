@@ -9,6 +9,15 @@
     padding: 1.5rem;
 
     &__item {
+
+        box-shadow: 0 .5rem 1.5rem rgba(46,61,73,.2);
+        transition: all .2s ease-out;
+
+        &:hover {
+            box-shadow: 0 .2px .5rem 0 rgba(46,61,73,.2);
+        }
+
+
         &--1 {
             grid-column: 1 / span 2;
             grid-row: 1 / span 2;

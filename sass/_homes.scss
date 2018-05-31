@@ -4,14 +4,20 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 7rem;
-    margin: 15rem 0;
+    padding: 15rem 0;
 }
 
 .home {
     background-color: $color-grey-light-1;
+    box-shadow: 0 .5rem 2.5rem rgba(46,61,73,.2);
+    transition: box-shadow .2s ease-out;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    &:hover {
+        box-shadow: 0 .5rem 1rem 0 rgba(46,61,73,.2);
+    }
 
     &__img {
         width: 100%;
@@ -67,5 +73,10 @@
 
     &__btn {
         grid-column: 1 / -1;
+        box-shadow: 0 0 0 0;
+        
+        &:hover {
+            box-shadow: 0 0 0 0;
+        }
     }
 }
